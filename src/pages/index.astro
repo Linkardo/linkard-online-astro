@@ -1,9 +1,9 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
-const pageTitle = "Linkard Online";
+const pageTitle = "Home Page";
 
 ---
 
@@ -16,7 +16,7 @@ const pageTitle = "Linkard Online";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<h1>{pageTitle}</h1>
 
 		<p>I miss surfing the internet. I don’t like algorithms that mindlessly feed you “““content””” (god, I hate that word).</p>
@@ -25,5 +25,8 @@ const pageTitle = "Linkard Online";
 
 		<p><em><b>This website does not collect cookies</b></em></p>
 		<Footer />
+		<script>
+    		import "../scripts/menu.js";
+  		</script>
 	</body>
 </html>

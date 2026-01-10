@@ -1,9 +1,18 @@
 ---
-const platform = "github";
-const username = "withastro";
+import Social from './Social.astro';
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-  <!-- <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p> -->
-  Made with Astro (using <a href="https://docs.astro.build/en/tutorial/0-introduction/"> their awesome tutorial</a>).
+  <Social platform="youtube" username="@Linkard" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+
+  <p>Made with Astro (using <a href="https://docs.astro.build/en/tutorial/0-introduction/"> their awesome tutorial</a>).</p>
 </footer>
