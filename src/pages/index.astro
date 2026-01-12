@@ -1,32 +1,13 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
-
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h1>{pageTitle}</h1>
-
+<BaseLayout pageTitle={pageTitle}>
+		<h2>My awesome blog subtitle</h2>
 		<p>I miss surfing the internet. I don’t like algorithms that mindlessly feed you “““content””” (god, I hate that word).</p>
 
 		<p>So, this is my personal space on the internet, where I write about things I've read, seen, watched... Here, you’ll find links to other websites, tools, youtube channels and more !</p>
 
 		<p><em><b>This website does not collect cookies</b></em></p>
-		<Footer />
-		<script>
-    		import "../scripts/menu.js";
-  		</script>
-	</body>
-</html>
+</BaseLayout>
